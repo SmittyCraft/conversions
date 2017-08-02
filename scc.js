@@ -8,13 +8,14 @@ var hex = {
   conversion: function (base, number) {
     switch (base) {
       case 10:
-        for (digits = 0; (Math.pow(16, digits + 1)) <= number; digits++) {}
-        
+        for (digits = 0; (Math.pow(16, digits)) <= number; digits++) {}
+        for (i = 0; i < digits; i++) {
+        }
         break;
       case 2:
         break;
     }
     // return digits + 1;
-    return 'yee';
+    return digits;
   }
 };
